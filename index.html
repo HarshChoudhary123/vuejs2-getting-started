@@ -1,14 +1,21 @@
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 
 <div id="app">
-    <p>{{ title }}</p>
+    <p>{{ title }}</p><br><br>
+    This is live input u can see.<br><br>
+    <input type="text" v-model="text">
 </div>
 
 <script>
     new Vue({
         el: '#app',
         data: {
-            title: 'Hello World!'
+            title: 'Hello World!',
+            return{
+            text: '',
         }
+        },
+        
+        
     });
 </script>
